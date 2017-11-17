@@ -55,10 +55,7 @@ curl -i -H "Content-Type:application/json" -X POST -d '{"query":"hinton发表的
      awk 'BEGIN{srand()}{b[rand()NR]=$0}END{for(x in b)print b[x]}' test_result1 >> test
 
  15. 查看gpu使用情况:nvidia-smi
- 16. 准确率|召回率|F值
- 准确率 = 提取出的正确信息条数 / 提取出的信息条数  =======> 查准率
-召回率 = 提取出的正确信息条数 / 样本中的信息条数 =======> 查全率
-F值  = 正确率 * 召回率 * 2 / (正确率 + 召回率)
+ 16. 精确率|召回率:https://www.zhihu.com/question/19645541
 
  17. u盘读取出错:  sudo ntfsfix /dev/sdb4
  18. 使用sed命令行去掉 <200b>
@@ -133,3 +130,4 @@ sys.path.append(’引用模块的地址')
  37. 日志logging模块：http://www.cnblogs.com/dkblog/archive/2011/08/26/2155018.html
  38. sys.argv[]是用来获取命令行参数的，sys.argv[0]表示代码本身文件路径，所以参数从1开始。
  39. http://www.json.cn/在线json解析
+ 40. 
