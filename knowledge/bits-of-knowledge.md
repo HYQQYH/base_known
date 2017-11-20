@@ -130,4 +130,24 @@ sys.path.append(’引用模块的地址')
  37. 日志logging模块：http://www.cnblogs.com/dkblog/archive/2011/08/26/2155018.html
  38. sys.argv[]是用来获取命令行参数的，sys.argv[0]表示代码本身文件路径，所以参数从1开始。
  39. http://www.json.cn/在线json解析
- 40. 
+ 40. 删除软件包：
+ 参考：https://www.linuxdashen.com/debianubuntu%E6%B8%85%E7%90%86%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E7%9A%848%E4%B8%AA%E6%8A%80%E5%B7%A7
+ >删除软件包：
+sudo apt-get remove <package-name>
+sudo apt-get purge <package-name>
+remove是删除软件包，purge是删除配置文件。
+查看系统上哪些软件包留下了残余的配置文件：
+dpkg -l | grep "^rc"
+删除这些软件包：
+dpkg --list | grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge
+删除孤儿软件包：
+sudo apt-get autoremove 
+
+ 41. npm install 速度慢 
+>换为国内镜像：
+npm install --registry=http://registry.npm.taobao.org
+永久设置：
+npm config set registry http://registry.npm.taobao.org 
+
+ 42. List item
+
