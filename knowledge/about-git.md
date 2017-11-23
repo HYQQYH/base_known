@@ -17,6 +17,6 @@ git clone https://github.com/fxsjy/jieba
 mv jieba/ jieba_t
 cp jieba_t/jieba jieba -r
 
- 3. 
+ 3. both modified:使用git diff手动merge
  4. 
 

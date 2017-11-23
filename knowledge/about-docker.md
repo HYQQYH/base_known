@@ -1,4 +1,4 @@
-### Docker相关
+﻿### Docker相关
 
  1. 创建Dockerfile
  2. 使用 Dockerfile 文件，通过 docker build 命令来构建一个镜像。
@@ -13,4 +13,11 @@
  4. 使用命令:`docker exec $IMAGE_ID ls` 可以查看该docker中的目录.
  5. 使用命令:`docker exec $IMAGE_ID cat engine.log` 可查看docker服务器中的log.
  6.  `docker image rm -f IMAGEID`删除docker image
+
+ 7. 关掉运行中的docker:
+ >1.docker ps #查看运行中的docker
+ >2.docker stop $IMAGE_ID
+ 
+
+ 8. 使用`docker run --env-file=env.conf -p 50001:50001 kgqa`可以将配置文件env.conf中的参数传进dockerfile
 
