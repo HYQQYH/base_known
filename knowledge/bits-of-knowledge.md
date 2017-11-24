@@ -149,5 +149,5 @@ npm install --registry=http://registry.npm.taobao.org
 永久设置：
 npm config set registry http://registry.npm.taobao.org 
 
- 42. List item
+ 42. `sed 's/=>/%/g' examples/data/AI_industry/rules/mannully_rules.txt | sort -k 2 -t "%" | sed 's/%/=>/g' | less`该命令实现将文件中的`=>`替换为`%`号,然后以`%`为分隔符,以第二列内容进行排序,排序后在将`%`替换回`=>`.
 
