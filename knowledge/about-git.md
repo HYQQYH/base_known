@@ -18,5 +18,5 @@ mv jieba/ jieba_t
 cp jieba_t/jieba jieba -r
 
  3. both modified:使用git diff手动merge
- 4. 
+ 4. 添加tag,`git tag V0.0.1`,`git push tags`
 
