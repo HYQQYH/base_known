@@ -39,7 +39,7 @@ curl -i -H "Content-Type:application/json" -X POST -d '{"query":"hinton发表的
 
  10. 一个类实例也可以变成一个可调用对象，只需要实现一个特殊方法`__call__()`,像函数一样被调用,很多开源代码中均有体现,如nmt.
  11. 提取recodeId:
-`grep '"core": "/data/chat"' log/$yesterday.log | grep -o -P '"recordId": ".*?"' | awk -F ': ' '{print $2}' | sed 's/"//g' > recordId/$yesterday.recordId`
+`grep '"core": "/data/chat"' log/$yesterday.log | grep -o -P '"recordId": ".*?"' | awk -F ':' '{print $2}' | sed 's/"//g' > recordId/$yesterday.recordId`
  
 
  12. 按第2列对文件内容进行排序,分隔符为tab: 
