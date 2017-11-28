@@ -1,6 +1,6 @@
 ﻿**base knowledge**
 -------------
-### Vim知识
+### Vim $ linux知识
 
  1. vim中从第n行开始到到最后一行进行替换
  `:n,$s/vivian/sky/g`带g表示替换所有,不带只替换第一个
@@ -48,3 +48,45 @@ FNR,与NR功用类似,不同的是awk每打开一个新文件,FNR便从0重新�
  >解释:\$line为当前行内容,\$RANDOM为在行内容后添加一个随机数,用':'进行分隔,sort -k2,2 -t ':' -n只对用':'进行分隔的第二个域进行排序,-n为升序排序,最后的awk输出前5行内容,分隔符为':'.
  >关于sort排序的参考链接:http://man.linuxde.net/sort
 
+ 8. 去除重复行
+   > :g/^\(.*\)\$\n\1$/d                      //去除重复行
+ shell脚本中去重:`sort -u input-file -o output-file`
+ 
+
+ 9. 使用awk命令对文件内容进行洗牌:
+
+ >awk 'BEGIN{srand()}{b[rand()NR]=$0}END{for(x in b)print b[x]}' test_result1 >> test
+
+ 10. 使用sed命令行去掉 <200b>
+  `sed -i 's/\xe2\x80\x8b//g' inputfile`
+  
+ 11. 按第2列对文件内容进行排序,分隔符为tab: 
+ >sort -n -k 2 -t \t test.txt -o test.txt
+ -o命令表示将排序后的内容存储于原文件中.
+ 
+
+ 12. 提取recodeId:
+`grep '"core": "/data/chat"' log/$yesterday.log | grep -o -P '"recordId": ".*?"' | awk -F ':' '{print $2}' | sed 's/"//g' > recordId/$yesterday.recordId`
+
+ 13. ls -lt:按时间排序.
+ 14. gf可打开光标下的路径，ctrl+o可退回之前页面
+:tabnew[file]，在tab页中编辑打开文件，gt进行页面切换
+shift + #:查找光标所在字符串
+
+ 15. 去掉vim 中的^M符号
+ >：%s/^M//g
+tr -d "\015" <douban_que_ans2> douban_que_ans3
+
+ 16. `grep -n http://tieba.baidu.com/f?kw=%E5%91%A8%E6%9D%B0%E4%BC%A6 spider-tieba_2017-05-05-09:02:39.log | grep -o '\[http.*\]' | sort -u`
+ 17.  `grep -P -o '<a href.*?class="j_th_tit ".*?</a>' tieba.html` 结果如下：
+`<a href="/p/5089096303" title="`【JayCn】【地表最强】" target="_blank" class="j_th_tit ">【JayCn】【地表最强】`</a>`
+
+ 18. 终端命令：`Shift+Ctrl+T` 打开新的标签页
+`ctrl + pageUp ctrl + pageDown`可在多个屏幕中进行切换
+
+ 19. `python tiebacontentParser.py | tee tieba.htm`,查看爬取的htm页面，tee指令会从标准输入设备读取数据，将其内容输出到标准输出设备，同时保存成文件。
+ 20.  yw //复制从光标开始到词尾的字符。ndw或ndW：删除光标处开始及其后的n-1个字
+ 32. grep 'failed to parse' log/spider-shiwanwhy_2017-04-24-11:14:22.log | awk -F 'with parser' '{print $2}' | sort -u
+ 33. du -sh pages:查看文件大小。
+wc -l pages：查看文件数量
+ 42. `sed 's/=>/%/g' examples/data/AI_industry/rules/mannully_rules.txt | sort -k 2 -t "%" | sed 's/%/=>/g' | less`该命令实现将文件中的`=>`替换为`%`号,然后以`%`为分隔符,以第二列内容进行排序,排序后在将`%`替换回`=>`.

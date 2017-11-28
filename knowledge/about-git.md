@@ -20,3 +20,4 @@ cp jieba_t/jieba jieba -r
  3. both modified:使用git diff手动merge
  4. 添加tag,`git tag V0.0.1`,`git push tags`
 
+ 5. git add 之后git commit之前切勿git pull,否则git add的东西将会消失!
