@@ -16,7 +16,8 @@
  >3.required参数为False,表明该参数非必须.
  >4.type参数,指明该参数的类型.default为其默认的值
  >5.store 保存参数值，可能会先将参数值转换成另一个数据类型。若没有显式指定动作，则默认为该动作。
- 
+ >参考链接:https://www.cnblogs.com/lovemyspring/p/3214598.html
+
  2. 使用configparser读取配置文件:
  >1.cf = configparser.ConfigParser(
             interpolation=configparser.ExtendedInterpolation())
