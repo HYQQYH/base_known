@@ -11,8 +11,8 @@
  >例子如:
  >`parser.add_argument('-w','--weight',dest='weight',action='store',metavar='number',required=False,default=-1,type=float,help='weight number')`
  >令args = parser.parse_args()
- >1.dest参数的存在,允许如下访问方式:args.weight,若上述例子中不存在dest,但存在'--weight',也可使用args.weight访问参数.
- >2.上述例子允许在命令中以-w 3.4或--weight 3.4的方式传进参数.
+ >1.dest参数的存在,允许如下访问方式:args.weight,若上述例子中不存在dest,但存在`'--weight'`,也可使用args.weight访问参数.
+ >2.上述例子允许在命令中以`-w 3.4`或`--weight 3.4`的方式传进参数.
  >3.required参数为False,表明该参数非必须.
  >4.type参数,指明该参数的类型.default为其默认的值
  >5.store 保存参数值，可能会先将参数值转换成另一个数据类型。若没有显式指定动作，则默认为该动作。
@@ -34,3 +34,13 @@
  >Python: 3.2
  >path: \${Common:system_dir}/Library/Frameworks/
  >ExtendedInterpolation使用${section:option}来表示来自外部section的值.
+ >
+
+ 3. 获取文件夹下的所有文件名:
+ `lists = os.listdir(db_path)` #db_path为一个文件夹目录
+ `for classname in lists:`
+  ....   `filepath = os.path.join(db_path,classname)` #可得到文件夹下每个文件的所在路径
+  `os.path.isdir(filepath)`#判断是否为文件夹
+  `os.path.isfile(filepath)`#判断是否为文件
+
+ 4. List item

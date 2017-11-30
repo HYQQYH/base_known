@@ -89,3 +89,7 @@ sudo apt-get autoremove
  >json.loads是对数据进行反序列化,如把上述的str还原成dict
  >json.dump是把某种数据类型的数据进行序列化同时写出到某个文件.
  >json.load是从文件中读取数据并反序列化
+ >
+
+ 12. 线上编辑器:https://stackedit.io/editor#
+ 13. Finite State Transducer（FST）in NLP:https://www.douban.com/note/326761737/
