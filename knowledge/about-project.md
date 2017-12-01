@@ -31,4 +31,6 @@ npm install --registry=http://registry.npm.taobao.org
 永久设置：
 npm config set registry http://registry.npm.taobao.org 
 
- 8. List item
+ 8. python3.6下虚拟环境中安装pyfst:
+ >pip3 install pyyaml
+ >python setup.py install #第三方安装 ,进入thirdparty/pyfst目录

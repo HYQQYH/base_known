@@ -40,19 +40,13 @@ sys.path #查看里面是否包含/usr/local/lib
 >scp tianjin:/path/filename /localpath/
 >以上两条命令都需要输入跳板机的密钥密码
 
- 2. 虚拟环境下安装python 3.5：
->首先安装virtualenvwrapper，可以选择apt安装或者pip安装
-apt安装
-\$ sudo apt-get install virtualenvwrapper
-pip安装
-\$ sudo pip install virtualenvwrapper
-当你需要使用Python2开发项目时，建立一个Python2的虚拟环境：
-\$ mkvirtualenv -p /usr/bin/python2 env27
-当你需要Python3开发时：
-\$ mkvirtualenv -p /usr/bin/python3.4 env34
-然后可以随时切换不同的虚拟环境：
-\$ workon env27  # 进入Python2环境
-\$ workon env34  # 进入Python3环境
+ 2. 创建虚拟环境：
+>\$ sudo pip3 install virtualenv
+>\$ mkdir myproject
+ >\$ cd myproject
+ >\$ virtualenv venv
+ >\$ . venv/bin/activate  #或者source venv/bin/activate
+ >
 
 
  3. random.shuffle的函数原型为：random.shuffle(x[, random])，用于将一个列表中的元素打乱。
