@@ -43,4 +43,4 @@
   `os.path.isdir(filepath)`#判断是否为文件夹
   `os.path.isfile(filepath)`#判断是否为文件
 
- 4. List item
+ 4. 在python脚本中使用os.system(dot -Tpdf -o test.dot),相当于在终端命令中执行dot -Tpdf -o test.dot,以上命令生成一个pdf文件,输入为.dot文件
