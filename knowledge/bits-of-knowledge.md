@@ -87,3 +87,16 @@ sudo apt-get autoremove
 
  12. 线上编辑器:https://stackedit.io/editor#
  13. Finite State Transducer（FST）in NLP:https://www.douban.com/note/326761737/
+ 14. 打包:tar -czvf dest.tar.gz source
+ 15. 解压:tar -xzvf dest.tar.gz
+ 16. 从本地拷贝文件至远程
+ >复制文件:`scp local_file remote_username@remote_ip:remote_folder`
+ >复制文件夹:`scp -r local_folder remote_username@remote_ip:remote_folder`
+ 
+ 17. 从远程拷贝文件至本地:
+  >复制文件:`scp remote_username@remote_ip:remote_file local_older`
+ >复制文件夹:`scp -r remote_username@remote_ip:remote_folder local_folder`
+ 
+ 18. 远程拷贝带参数,如-P(端口号),-i(密匙)
+ >`scp -P5837 -i aispeech.pem smy.tar.gz root@120.55.54.194:~/`
+ >`scp -P5837 smy.tar.gz root@47.96.190.215:~/`
