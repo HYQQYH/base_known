@@ -1,6 +1,6 @@
 ﻿### 关于安装软件
 
- 1. 从源文件安装python3.6:
+ 1. 从源文件安装python3.6（old):
  >参考链接:http://blog.csdn.net/jeryjeryjery/article/details/77880227
  >1.安装openSSL:
  >\$sudo apt-get install openssl
@@ -164,4 +164,7 @@ sudo apt-get autoremove #记得执行了此操作
  5. lsb_release -a 问题：
  > vim /usr/bin/lsb_release
  > change the first line to read: #! /usr/bin/python2 -Es
+
+ 6. install python3.6.1 in ubuntu16.04
+ > 链接：http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/
 
