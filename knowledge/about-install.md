@@ -173,3 +173,11 @@ sudo apt-get install python3.6
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
 sudo update-alternatives --config python3 
+
+ 7.  pip镜像源的配置
+参考http://www.jianshu.com/p/785bb1f4700d
+临时使用：
+pip install pythonModuleName -i https://pypi.douban.com/simple
+修改~/.pip/pip.conf：
+[global]
+index-url = https://pypi.douban.com/simple 
