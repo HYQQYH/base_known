@@ -40,7 +40,7 @@ sys.path #查看里面是否包含/usr/local/lib
 >scp tianjin:/path/filename /localpath/
 >以上两条命令都需要输入跳板机的密钥密码
 
- 2. 创建虚拟环境：
+ 2. 创建虚拟环境(old)：
 >\$ sudo pip3 install virtualenv
 >\$ mkdir myproject
  >\$ cd myproject
