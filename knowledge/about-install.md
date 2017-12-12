@@ -181,3 +181,11 @@ pip install pythonModuleName -i https://pypi.douban.com/simple
 修改~/.pip/pip.conf：
 [global]
 index-url = https://pypi.douban.com/simple 
+
+ 8. python3.6安装pyltp下出现如下问题：
+ >Failed building wheel for pyltp
+ >patch/include/boost/python/detail/wrap_python.hpp:50:23: fatal error: pyconfig.h: No such file or directory
+ >ls /usr/include/  #查看该目录发现没有python3.6，只有python2.7和python3.5
+ >原因是缺少python3.6的依赖，使用如下命令：
+ >sudo apt-get install python3.6-dev
+ >则ls /usr/include/下有python3.6文件夹，文件夹内有pyconfig.h文件
