@@ -10,6 +10,7 @@
 \$./configure --with-ssl
 \$sudo make
 $sudo make altinstall
+http://www.cnblogs.com/iforelse/p/7852347.html
 
  2. ImportError: libfst.so.0: cannot open shared object file: No such file or directory
  >解决方法:
