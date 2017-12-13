@@ -1,4 +1,15 @@
 ﻿
+
+ 1. 通过安装node来安装npm，不要单独安装npm
+ >关于npm install速度慢的问题，参考：http://jschenxiaoyu.blogspot.hk/2017/10/npm-install.htm
+更新npm：
+sudo npm install npm -g
+安装指定版本npm（npm5不稳定，不要安装）
+npm install -g npm@4.6.1
+使用国内镜像源：
+npm config set registry http://registry.npm.taobao.org
+
+
  2. npm install 速度慢 
 >换为国内镜像：
 npm install --registry=http://registry.npm.taobao.org
@@ -40,4 +51,4 @@ npm config set registry http://registry.npm.taobao.org
     动态导入：通过模块的内联函数调用来分离代码。
 
  12. html-webpack-plugin:自动生成index.html
- 13. item
+ 13. webpack设置，file->settings->language&Frameworks->javascript->javascript language version=ECMAScript6
