@@ -52,3 +52,4 @@ npm config set registry http://registry.npm.taobao.org
 
  12. html-webpack-plugin:自动生成index.html
  13. webpack设置，file->settings->language&Frameworks->javascript->javascript language version=ECMAScript6
+ 14. 安装java：https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
