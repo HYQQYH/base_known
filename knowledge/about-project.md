@@ -34,3 +34,16 @@ npm config set registry http://registry.npm.taobao.org
  8. python3.6下虚拟环境中安装pyfst:
  >pip3 install pyyaml
  >python setup.py install #第三方安装 ,进入thirdparty/pyfst目录
+
+ 9. 安装及运行smart_server笔记:
+ 1.安装openresty-1.11.2.2.tar.gz
+ 解压后`./configure`,`sudo make`,`sudo make install`
+ 设置环境变量`export PATH=/home/aisp/openresty/bin:$PATH
+export PATH=/home/aisp/openresty/nginx/sbin/:$PATH`
+2.在smart_server文件夹同级目录新建文件夹deployed,git clone smart-server / rankserver , logserver , logicserver ,cacheproxy ,及copy run.sh文件至该目录.
+3.在deployed目录下运行`./run.sh start`启动服务
+4.在deployed目录下运行`tail -f logicserver/logs/error.log`查看log
+5.在smart-server目录下运行`./test/test_text.py hello`发送测试数据.
+6.在deployed目录下运行`./run.sh stop`关闭服务
+
+ 10. List item
