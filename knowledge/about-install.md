@@ -189,3 +189,6 @@ index-url = https://pypi.douban.com/simple
  >原因是缺少python3.6的依赖，使用如下命令：
  >sudo apt-get install python3.6-dev
  >则ls /usr/include/下有python3.6文件夹，文件夹内有pyconfig.h文件
+
+ 9. scp 拷贝文件至远程服务器失败,可能是远程机器未安装sshd
+ >sudo apt-get install openssh-server
