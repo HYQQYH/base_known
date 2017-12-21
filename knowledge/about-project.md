@@ -46,4 +46,11 @@ export PATH=/home/aisp/openresty/nginx/sbin/:$PATH`
 5.在smart-server目录下运行`./test/test_text.py hello`发送测试数据.
 6.在deployed目录下运行`./run.sh stop`关闭服务
 
- 10. List item
+ 10. flask+webpack+react开发：
+ >cd app/static/js
+ >npm install -g webpack
+ >npm init
+ >npm install react --save-dev
+ >npm install react-dom --save-dev
+ >npm install jsx-loader --save-dev
+ >在js（webpack.config.js）目录下webpack生成bundle.js
