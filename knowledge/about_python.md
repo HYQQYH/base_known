@@ -44,3 +44,9 @@
   `os.path.isfile(filepath)`#判断是否为文件
 
  4. 在python脚本中使用os.system(dot -Tpdf -o test.dot),相当于在终端命令中执行dot -Tpdf -o test.dot,以上命令生成一个pdf文件,输入为.dot文件
+ 5. 使用@property装饰器把一个方法变成属性进行调用,@property广泛应用在类的定义中，可以让调用者写出简短的代码，同时保证对参数进行必要的检查，这样，程序运行时就减少了出错的可能性。参考链接:https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386820062641f3bcc60a4b164f8d91df476445697b9e000
+ 6. \__str__特殊方法,类似与\__init__方法,主要用于定义类中,按特定格式打印出类的实例.供print调用,方便调试.http://blog.csdn.net/luckytanggu/article/details/53649156
+ > 注意:若类中实现了\__str__函数,则`str(A)`(A为类对象),效果等同于`print(A)`
+ 
+
+ 7. List item
