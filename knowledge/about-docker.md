@@ -21,3 +21,4 @@
 
  8. 使用`docker run --env-file=env.conf -p 50001:50001 kgqa`可以将配置文件env.conf中的参数传进dockerfile
 
+ 9. docker教程:https://yeasy.gitbooks.io/docker_practice/content/image/dockerfile/cmd.html
