@@ -23,3 +23,6 @@ cp jieba_t/jieba jieba -r
 
  5. git add 之后git commit之前切勿git pull,否则git add的东西将会消失!
  6. git分支的新建与合并:https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6
+ 7. dev分支merge到master分支:
+ > 在dev分支上运行 git rebase origin/master 把master的内容合并到dev.
+ > 按提示进行修改

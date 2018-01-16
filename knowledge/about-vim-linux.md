@@ -91,3 +91,6 @@ tr -d "\015" <douban_que_ans2> douban_que_ans3
 wc -l pages：查看文件数量
  42. `sed 's/=>/%/g' examples/data/AI_industry/rules/mannully_rules.txt | sort -k 2 -t "%" | sed 's/%/=>/g' | less`该命令实现将文件中的`=>`替换为`%`号,然后以`%`为分隔符,以第二列内容进行排序,排序后在将`%`替换回`=>`.
  43. 保留复制的格式：`:set paste`
+ 44. 关于BASH_SOURCE
+ > `DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"`得到shell脚本文件所在完整路径（绝对路径）及文件名（无论source,sh,.三种调用方式），且不改变shell的当前目录。
+ > 参考链接:http://blog.csdn.net/zhaozhencn/article/details/21103367
