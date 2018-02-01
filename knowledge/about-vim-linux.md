@@ -86,11 +86,16 @@ tr -d "\015" <douban_que_ans2> douban_que_ans3
 
  19. `python tiebacontentParser.py | tee tieba.htm`,查看爬取的htm页面，tee指令会从标准输入设备读取数据，将其内容输出到标准输出设备，同时保存成文件。
  20.  yw //复制从光标开始到词尾的字符。ndw或ndW：删除光标处开始及其后的n-1个字
- 32. grep 'failed to parse' log/spider-shiwanwhy_2017-04-24-11:14:22.log | awk -F 'with parser' '{print $2}' | sort -u
- 33. du -sh pages:查看文件大小。
+ 21. grep 'failed to parse' log/spider-shiwanwhy_2017-04-24-11:14:22.log | awk -F 'with parser' '{print $2}' | sort -u
+ 22. du -sh pages:查看文件大小。
 wc -l pages：查看文件数量
- 42. `sed 's/=>/%/g' examples/data/AI_industry/rules/mannully_rules.txt | sort -k 2 -t "%" | sed 's/%/=>/g' | less`该命令实现将文件中的`=>`替换为`%`号,然后以`%`为分隔符,以第二列内容进行排序,排序后在将`%`替换回`=>`.
- 43. 保留复制的格式：`:set paste`
- 44. 关于BASH_SOURCE
+ 23. `sed 's/=>/%/g' examples/data/AI_industry/rules/mannully_rules.txt | sort -k 2 -t "%" | sed 's/%/=>/g' | less`该命令实现将文件中的`=>`替换为`%`号,然后以`%`为分隔符,以第二列内容进行排序,排序后在将`%`替换回`=>`.
+ 24. 保留复制的格式：`:set paste`
+ 25. 关于BASH_SOURCE
  > `DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"`得到shell脚本文件所在完整路径（绝对路径）及文件名（无论source,sh,.三种调用方式），且不改变shell的当前目录。
  > 参考链接:http://blog.csdn.net/zhaozhencn/article/details/21103367
+ 
+
+ 26. `command>/dev/null 2>&1 &`, 最后一个`&`是把该命令以后台的job的形式运行,`command > /dev/null`相当于执行了`command 1 > /dev/null`。执行command产生了标准输出stdout(用1表示)，重定向到/dev/null的设备文件中。对于`command>a 2>&1`这条命令，等价于`command 1>a 2>&1`可以理解为执行command产生的标准输入重定向到文件a中，标准错误也重定向到文件a中.参考链接:http://blog.csdn.net/ggxiaobai/article/details/53507530
+ 27. `find . -name '*.pyc' -exec rm -f {} +`删除所有查找匹配到的文件
+ 28. 

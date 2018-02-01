@@ -49,4 +49,5 @@
  > 注意:若类中实现了\__str__函数,则`str(A)`(A为类对象),效果等同于`print(A)`
  
 
- 7. List item
+ 7. 新建虚拟环境:
+ > `python3.6 -m venv env`
