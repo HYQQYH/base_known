@@ -98,4 +98,6 @@ wc -l pages：查看文件数量
 
  26. `command>/dev/null 2>&1 &`, 最后一个`&`是把该命令以后台的job的形式运行,`command > /dev/null`相当于执行了`command 1 > /dev/null`。执行command产生了标准输出stdout(用1表示)，重定向到/dev/null的设备文件中。对于`command>a 2>&1`这条命令，等价于`command 1>a 2>&1`可以理解为执行command产生的标准输入重定向到文件a中，标准错误也重定向到文件a中.参考链接:http://blog.csdn.net/ggxiaobai/article/details/53507530
  27. `find . -name '*.pyc' -exec rm -f {} +`删除所有查找匹配到的文件
- 28. 
+ 28. vim中查找日期格式如(2010..):
+ > `/\v"(\d+)\.\."`
+ > `:%s//"\1"` #将以上搜索到的内容进行替换

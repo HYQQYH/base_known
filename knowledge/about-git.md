@@ -26,3 +26,5 @@ cp jieba_t/jieba jieba -r
  7. dev分支merge到master分支:
  > 在dev分支上运行 git rebase origin/master 把master的内容合并到dev.
  > 按提示进行修改
+
+ 8. `git cherry-pick <commit_id>`
