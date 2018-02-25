@@ -51,3 +51,12 @@
 
  7. 新建虚拟环境:
  > `python3.6 -m venv env`
+ 
+
+ 8. @classmethod与@staticmethod:
+ >classmethod 修饰符对应的函数不需要实例化，不需要 self 参数，但第一个参数需要是表示自身类的 cls 参数，可以来调用类的属性，类的方法，实例化对象等
+ >class A(object):
+ >def func(cls):
+ >pass
+ >print(A.func())
+ >staticmethod不能调用类的属性，方法，不需要self参数及cls参数。与类无关，但该类需要该方法时可以将函数定义为staticmethod。
