@@ -28,3 +28,6 @@ cp jieba_t/jieba jieba -r
  > 按提示进行修改
 
  8. `git cherry-pick <commit_id>`
+ 9. 拉取某tag的分支内容：
+ >git clone --branch v0.1.9 https://gitlab.spetechcular.com/his/KGQA.git KGQA_BK
+ >获取v0.1.9的代码，并将工程名重命名为KGQA_BK
