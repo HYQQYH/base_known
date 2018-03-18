@@ -57,3 +57,18 @@ the learning rate near the end of training.
  > b. very computionally efficient
  > c. converges much faster than sigmoid/tanh in practice
  > d. not zero-centered output
+
+###支持向量机
+
+ 1. 支持向量机处理非线性可分的情况：
+ > 1) 需要使用一个非线性映射将原始数据变换到高维空间（高维空间中线性可分，VC维原理）。
+ > 2) 在特征空间中使用线性分类器学习分类。
+
+ 2. 核函数
+ > 核函数的价值在于它虽然也是将特征从低维空间映射到高维， 但核函数仅通过低维计算就可把分类效果映射到高维上， 避免了高维空间中的组合爆炸问题。
+
+ 3. 含噪声的支持向量机分类（离群点的松弛变量）
+ > 引入松弛变量，允许数据点一定程度上偏离超平面。
+ > 优化目标增加惩罚项。
+ > 引入惩罚因子的好处：解决数据unbalanced问题，如可对样本数量少的负类更大的惩罚因子，表示我们重视这部分样本。
+
