@@ -35,11 +35,6 @@ the learning rate near the end of training.
  8. 需要弄清楚在nmt中各个参数的含义及其用法，如何调参的。
  9. sample softmax: 当目标词表很大时，可以通过sample softmax降低训练时的解码复杂度，可参考博客：http://blog.csdn.net/MebiuW/article/details/68952814
  10. beam search
- 11. CNN中避免过拟合的一些方法:
- > dropout
- > dropconnect
- 
-
  12. CNN中的一些优化方法：
  > 1) 参数初始化(打破对称性，降低梯度消失现象)：(0, 0.01)的高斯分布、xavier 、orthonormal matrix initialization
  > 2) 随机梯度下降SGD
@@ -107,3 +102,10 @@ https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651994342&idx=5&sn=dbae83
 
 ###机器学习工程师必须知道的十个算法 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651986479&idx=4&sn=108b62cd7e983c2866619209d0a504cb&mpshare=1&scene=1&srcid=0318bwzYCKwirsFMWiiiAhiq&pass_ticket=olmUPhHgWYcVWy1%2FLxx5uyOEWCDB5qKQjgZXZy88JfIIt8FvmDL7D9Ju2K5RTzqp#rd
+
+###避免过拟合：
+
+ 1. 增加输入数据、数据增强、早停、dropout 及其变体、L1 正则化、L2 正则化、
+
+###七个深度学习实用技巧
+http://imgtec.eetrend.com/blog/11289
