@@ -109,3 +109,9 @@ https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651986479&idx=4&sn=108b62
 
 ###七个深度学习实用技巧
 http://imgtec.eetrend.com/blog/11289
+
+###基于深度学习的智能问答
+https://yq.aliyun.com/articles/58745		
+
+###关于分词、命名实体识别、词性标注、句法分析：
+https://blog.csdn.net/hit_lingo/article/details/42639455
