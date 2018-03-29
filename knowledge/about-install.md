@@ -192,3 +192,6 @@ index-url = https://pypi.douban.com/simple
 
  9. scp 拷贝文件至远程服务器失败,可能是远程机器未安装sshd
  >sudo apt-get install openssh-server
+
+ 10. 安装完openfst及pyfst后需要：
+export LD_LIBRARY_PATH=/usr/local/lib
