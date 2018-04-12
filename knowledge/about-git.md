@@ -31,3 +31,6 @@ cp jieba_t/jieba jieba -r
  9. 拉取某tag的分支内容：
  >git clone --branch v0.1.9 https://gitlab.spetechcular.com/his/KGQA.git KGQA_BK
  >获取v0.1.9的代码，并将工程名重命名为KGQA_BK
+
+ 10. git免密码:git config --global credential.helper store
+
