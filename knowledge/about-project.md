@@ -57,3 +57,5 @@ export PATH=/home/aisp/openresty/nginx/sbin/:$PATH`
 
  11. pickle load: no module named xxx
  > 在将类保存为二进制pickle文件，再次进行load时，需要能够找到类的模块地址，解决方法可参考：https://stackoverflow.com/questions/2121874/python-pickling-after-changing-a-modules-directory
+
+ 12. 使用pipreqs生成项目工程的requirements.txt
