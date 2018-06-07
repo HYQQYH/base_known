@@ -22,3 +22,7 @@
  8. 使用`docker run --env-file=env.conf -p 50001:50001 kgqa`可以将配置文件env.conf中的参数传进dockerfile
 
  9. docker教程:https://yeasy.gitbooks.io/docker_practice/content/image/dockerfile/cmd.html
+ 10. `docker ps -a`查看所有的container
+ 11. `docker rm container_id`删除container
+ 12. `docker image rm id`删除image
+ 13. `COPY`失败有可能是因为在.dockerignore文件中忽略了该文件
