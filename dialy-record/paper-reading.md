@@ -37,9 +37,17 @@
     2. 类别不平衡问题:每个slide可以得到10,000-400,000 patches, 含tumor的slide可以得到20-150,000patches不等.为解决类别不平衡问题,normal和tumor得按比例采样.
     3. data augmentation:解决正例样本少的问题,本文中指tumor patch少.方法包括 旋转,左右反转,色彩变换
     4. 利用heat-map来展示检测病变位置.
+    5. 颜色归一化
 
 ### 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation
 
 * 应用: 三维图像的分割
 * High Light: 数据稀疏标注, 2D U-Net的变体, 开源, caffe实现
 * 知识点:
+
+### V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation
+
+* 应用: 三维图像(前列腺MRI)的分割
+* High Light: 2D U-Net的变体. 提出了一种新的目标函数(Dice coefficient),可有效解决foreground和background数量不平衡的问题. caffe实现
+* 知识点:
+  1. 数据扩充方法:随机非线性变换, histogram matching.
