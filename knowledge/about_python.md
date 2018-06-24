@@ -60,3 +60,5 @@
  >pass
  >print(A.func())
  >staticmethod不能调用类的属性，方法，不需要self参数及cls参数。与类无关，但该类需要该方法时可以将函数定义为staticmethod。
+
+ 9. csv文件在windows中打开乱码的解决方法: 保存csv文件时使用codecs.open(filename,'w',encoding='gbk').
