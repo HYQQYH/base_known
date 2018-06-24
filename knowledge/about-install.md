@@ -194,4 +194,7 @@ index-url = https://pypi.douban.com/simple
  >sudo apt-get install openssh-server
 
  10. 安装完openfst及pyfst后需要：
-export LD_LIBRARY_PATH=/usr/local/lib
+ 安装openfst时make install 需要sudo权限
+  export LD_LIBRARY_PATH=/usr/local/lib
+
+ 11. 在jupyter notebook中使用virtualenv:http://fosshelp.blogspot.hk/2017/08/how-to-add-python-virtualenv-to-ipython.html
