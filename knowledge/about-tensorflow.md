@@ -59,6 +59,12 @@ http://localhost:6006/
  5. List item
 
 
+### docker 方式运行tensorflow
+
+1. 安装`nvidia/cuda`[https://github.com/NVIDIA/nvidia-docker]
+2. container中运行指定版本的tensorflow: `nvidia-docker run -t TensorFlowGPUImage`[https://www.tensorflow.org/install/install_linux]
+3. demo: `nvidia-docker run -it -v /data1/home/huangyq/MultiPassageReader:/data1/home/huangyq/MultiPassageReader tensorflow/tensorflow:1.8.0-rc1-devel-gpu-py3`
+4. `-v`选项可挂载宿主机目录,可挂载多个.
 
 
  

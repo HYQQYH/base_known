@@ -22,9 +22,21 @@
  8. 使用`docker run --env-file=env.conf -p 50001:50001 kgqa`可以将配置文件env.conf中的参数传进dockerfile
 
  9. docker教程:https://yeasy.gitbooks.io/docker_practice/content/image/dockerfile/cmd.html
- 10. `docker ps -a`查看所有的container
- 11. `docker rm container_id`删除container
- 12. `docker image rm id`删除image
- 13. `COPY`失败有可能是因为在.dockerignore文件中忽略了该文件
- 14. 打包本地的image文件: `sudo docker save -o ubuntu.tar ubuntu`
- 15. 读取打包的image文件: `sudo docker load < ubuntu.tar`
+
+## 删除某个image的步骤如下:
+
+ 1. `docker image rm id`删除image,如失败,执行2
+ 1. `docker ps -a`查看所有的container(查看使用image的container,若该container在运行则,`docker stop id`)
+ 2. `docker rm container_id`删除container
+ 3. `docker image rm id`删除image
+
+
+ ## image打包与迁移:
+
+ 1. 打包本地的image文件: `sudo docker save -o ubuntu.tar ubuntu`
+ 2. 读取打包的image文件: `sudo docker load < ubuntu.tar`
+
+
+## 零散:
+
+ 1. `COPY`失败有可能是因为在.dockerignore文件中忽略了该文件

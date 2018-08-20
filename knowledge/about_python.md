@@ -62,3 +62,8 @@
  >staticmethod不能调用类的属性，方法，不需要self参数及cls参数。与类无关，但该类需要该方法时可以将函数定义为staticmethod。
 
  9. csv文件在windows中打开乱码的解决方法: 保存csv文件时使用codecs.open(filename,'w',encoding='gbk').
+
+
+ 10. 关于'ascii' codec can't decode byte 0xe7 in position 0: ordinal not in range(128)的问题的解决方法:
+ > Python中字符串类型分为byte string 和 unicode string两种。 如果在python文件中指定编码方式为utf-8(#coding=utf-8)，那么所有带中文的字符串都会被认为是utf-8编码的byte string（例如：mystr=”你好”），但是在函数中所产生的字符串则被认为是unicode string。unicode string 和 byte string 是不可以混合使用的.将字符串全都转成unicode string。如'你好'改为u'你好'
+ https://blog.csdn.net/u011350541/article/details/78683682
