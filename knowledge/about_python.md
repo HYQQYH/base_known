@@ -67,3 +67,5 @@
  10. 关于'ascii' codec can't decode byte 0xe7 in position 0: ordinal not in range(128)的问题的解决方法:
  > Python中字符串类型分为byte string 和 unicode string两种。 如果在python文件中指定编码方式为utf-8(#coding=utf-8)，那么所有带中文的字符串都会被认为是utf-8编码的byte string（例如：mystr=”你好”），但是在函数中所产生的字符串则被认为是unicode string。unicode string 和 byte string 是不可以混合使用的.将字符串全都转成unicode string。如'你好'改为u'你好'
  https://blog.csdn.net/u011350541/article/details/78683682
+
+ 11. 使用"nohup"， 即 “nohup ./myjob &”，忽略hangup信号，防止shell关闭时程序停掉。(程序后台运行)
