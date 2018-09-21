@@ -5,6 +5,6 @@
  3. git
  4. virtualenv
  5. 安装ssh服务：sudo apt-get install openssh-server自动安装ssh服务。
- > https://blog.csdn.net/zht666/article/details/9340633
+    > https://blog.csdn.net/zht666/article/details/9340633
  6. List item
 

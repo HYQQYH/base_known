@@ -2,9 +2,8 @@
 
  1. 创建Dockerfile
  2. 使用 Dockerfile 文件，通过 docker build 命令来构建一个镜像。
-
-     >docker build -t runoob/centos:6.7 .
-     >-t:指定要创建的目标镜像名
+     >docker build -t runoob/centos:6.7 .<br>
+     >-t:指定要创建的目标镜像名<br>
      . ：Dockerfile 文件所在目录，可以指定Dockerfile 的绝对路径
 
  3. `docker run -p 6001:50001 -t -i hyq/kgqa:1.2`
@@ -15,7 +14,7 @@
  6.  `docker image rm -f IMAGEID`删除docker image
 
  7. 关掉运行中的docker:
- >1.docker ps #查看运行中的docker
+ >1.docker ps #查看运行中的docker<br>
  >2.docker stop $IMAGE_ID
  
 
