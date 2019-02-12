@@ -104,3 +104,6 @@ wc -l pages：查看文件数量
 
  29. 查看端口被哪个进程占用：netstat -apn | grep 8081， kill -9 进程号
  30. 批量文件重命名: for i in `ls`; do mv -f $i `echo $i | sed 's/\.jpg/2\.jpg/'`;done  注释:修改文件名为*.jpg为*1.jpg
+ 31. 快速统计文件中不同内容的数量： uniq -c
+ 32. 查看文档或字符串的编码格式： chardet.detect(s)
+ 33. 

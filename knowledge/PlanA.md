@@ -1,4 +1,4 @@
-﻿###知识总结 
+﻿### 知识总结 
  
  1. 为什么fst的结果要优于trie
  > fst为最大片段匹配,前缀后缀无关,trie要求从头匹配.
@@ -55,7 +55,7 @@ the learning rate near the end of training.
  > c. converges much faster than sigmoid/tanh in practice
  > d. not zero-centered output
 
-###支持向量机
+### 支持向量机
 
  1. 支持向量机处理非线性可分的情况：
  > 1) 需要使用一个非线性映射将原始数据变换到高维空间（高维空间中线性可分，VC维原理）。
@@ -69,11 +69,11 @@ the learning rate near the end of training.
  > 优化目标增加惩罚项。
  > 引入惩罚因子的好处：解决数据unbalanced问题，如可对样本数量少的负类更大的惩罚因子，表示我们重视这部分样本。
 
-###分类结果评估
+### 分类结果评估
 
  1. 精确率|召回率:https://www.zhihu.com/question/19645541
 
-###常用机器学习算法
+### 常用机器学习算法
 
  1. 用于分类：KNN、朴素贝叶斯、SVM、决策树
  2. 用于聚类：K-means
@@ -81,37 +81,37 @@ the learning rate near the end of training.
  4. 数据预处理：标准化、去除均值率和方差缩放、正规化、二值化
  5. 模型选择：交叉验证、网格搜索、验证曲线
 
-###机器学习、深度学习知识点总结及面试题：
+### 机器学习、深度学习知识点总结及面试题：
 
 https://mp.weixin.qq.com/s?__biz=MzA4NzE1NzYyMw==&mid=2247496101&idx=2&sn=3e61ce52d45906d01ef82bdb1dd6ebe9&chksm=903f0fbda74886ab6e7306d5cc9882e0c1a67acc704c190c76557859f2e80e1c5585c22de932&mpshare=1&scene=1&srcid=0318vwyKYZYAVUlfG7wXAgPS&pass_ticket=olmUPhHgWYcVWy1%2FLxx5uyOEWCDB5qKQjgZXZy88JfIIt8FvmDL7D9Ju2K5RTzqp#rd
-###深度学习中的五大正则化方法和七大优化策略：
+### 深度学习中的五大正则化方法和七大优化策略：
   https://mp.weixin.qq.com/s?__biz=MzA4NzE1NzYyMw==&mid=2247495766&idx=3&sn=09c34414d559d4843705b7d08a8c20a2&chksm=903f0e4ea748875814e4b6caa7fafea1a03a8598ebc81476fb30a41306b8cc3a50bd39d7a598&scene=0&pass_ticket=olmUPhHgWYcVWy1%2FLxx5uyOEWCDB5qKQjgZXZy88JfIIt8FvmDL7D9Ju2K5RTzqp#rd
 
-###深度学习的这些坑你都遇到过吗？神经网络 11 大常见陷阱及应对方法 :
+### 深度学习的这些坑你都遇到过吗？神经网络 11 大常见陷阱及应对方法 :
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652004081&idx=4&sn=d28fc6c3ac2f631aab08611877fdde6f&chksm=f1212a00c656a316d0aeba042af5406cef0177132f5001d5d4a6cc05cd804e634c178602270f&mpshare=1&scene=1&srcid=0907mQ9O6t2mq95xN0502JWo&pass_ticket=olmUPhHgWYcVWy1%2FLxx5uyOEWCDB5qKQjgZXZy88JfIIt8FvmDL7D9Ju2K5RTzqp#rd
 
-###TensorFlow的55个经典案例
+### TensorFlow的55个经典案例
 https://mp.weixin.qq.com/s?__biz=MzA4NzE1NzYyMw==&mid=2247491928&idx=3&sn=8aa6b60c87e0c912d41f0b78e5a8c090&chksm=903f1f40a7489656e3e70b1fb3b2598761b10bac8517bed303ef48f0dff9e675dabfa34e9bfc&mpshare=1&scene=1&srcid=0318NPqmxS6x5Cf6a8RYxJCm&pass_ticket=olmUPhHgWYcVWy1%2FLxx5uyOEWCDB5qKQjgZXZy88JfIIt8FvmDL7D9Ju2K5RTzqp#rd
 
 
-###深度学习必备：随机梯度下降（SGD）优化算法及可视化
+### 深度学习必备：随机梯度下降（SGD）优化算法及可视化
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651996065&idx=4&sn=cad829251a0655c8b3d11a6b448dd143&chksm=f1214b50c656c246b91c47dc738dba5dd375e8d60a0b220cc8829cc7dfcbc8134401d30a07de&mpshare=1&scene=1&srcid=0318ctyv0vQGoXx6YTf4SH0f&pass_ticket=olmUPhHgWYcVWy1%2FLxx5uyOEWCDB5qKQjgZXZy88JfIIt8FvmDL7D9Ju2K5RTzqp#rd
 
-###18个技巧实战深度学习，资深研究员的血泪教训 
+### 18个技巧实战深度学习，资深研究员的血泪教训 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651994342&idx=5&sn=dbae830cebb360f78f43191cf5d2c7ab&chksm=f1214c17c656c501d3fa7e45fdc9ccc9ada604051663d79153d16d60496e3d15785aeff12d0e&mpshare=1&scene=1&srcid=0318opZH2c8bPWqIRYAp7usO&pass_ticket=olmUPhHgWYcVWy1%2FLxx5uyOEWCDB5qKQjgZXZy88JfIIt8FvmDL7D9Ju2K5RTzqp#rd
 
-###机器学习工程师必须知道的十个算法 
+### 机器学习工程师必须知道的十个算法 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651986479&idx=4&sn=108b62cd7e983c2866619209d0a504cb&mpshare=1&scene=1&srcid=0318bwzYCKwirsFMWiiiAhiq&pass_ticket=olmUPhHgWYcVWy1%2FLxx5uyOEWCDB5qKQjgZXZy88JfIIt8FvmDL7D9Ju2K5RTzqp#rd
 
-###避免过拟合：
+### 避免过拟合：
 
  1. 增加输入数据、数据增强、早停、dropout 及其变体、L1 正则化、L2 正则化、
 
-###七个深度学习实用技巧
+### 七个深度学习实用技巧
 http://imgtec.eetrend.com/blog/11289
 
-###基于深度学习的智能问答
+### 基于深度学习的智能问答
 https://yq.aliyun.com/articles/58745		
 
-###关于分词、命名实体识别、词性标注、句法分析：
+### 关于分词、命名实体识别、词性标注、句法分析：
 https://blog.csdn.net/hit_lingo/article/details/42639455
